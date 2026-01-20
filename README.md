@@ -17,7 +17,34 @@ Enterprise-Ready Dashboard: Professionelle Dark Mode Benutzeroberfläche mit Ech
 
 # 📁 Projektstruktur & Navigation
 
-time_series_projekt/ |— app/# Streamlit Dashboard & UI Logik |— app.py # Hauptanwendung (Dark Mode) |— app_backup.py # Backup der ursprünglichen App |— bootstrap.py # UI-Komponenten & Styling |— notebooks/# Forschungs- & Entwicklungs-Pipeline |— 01_preprocessing.ipynb # Datenreinigung & Transformation |— 02_feature_engineering.ipynb# Feature-Generierung |— 03_data_management.ipynb # I/O Prozesse |— 04_lstm_modeling.ipynb # Deep Learning Modelle |— 05_xgboost_modeling.ipynb # Gradient Boosting |— 06_arima_analysis.ipynb # Statistische Baseline |— data/# Roh- und vorverarbeitete Datensätze |— filtered/# Vorverarbeitete Daten |— outputs/# Ergebnisse & Exporte |— forecasts/# Vorhersage-Ergebnisse |— visualizations/# Automatisch generierte Plots |— reports/# Analysen & Dokumentation |— paths.py # Zentrale Pfadverwaltung |— utils.py # Core Helper Functions |— visualizer.py # Plotting Engine |— requirements.txt # Hauptabhängigkeiten |— environment.yml # Conda Environment |— README.md # Diese Dokumentation
+time_series_projekt/
+├── app/                          # Streamlit Dashboard & UI Logik
+│   ├── app.py                      # Hauptanwendung (Dark Mode)
+│   ├── app_backup.py               # Backup der ursprünglichen App
+│   └── bootstrap.py                # UI-Komponenten & Styling
+│
+├── notebooks/                    # Forschungs- & Entwicklungs-Pipeline
+│   ├── 01_preprocessing.ipynb      # Datenreinigung & Transformation
+│   ├── 02_feature_engineering.ipynb# Feature-Generierung
+│   ├── 03_data_management.ipynb    # I/O Prozesse
+│   ├── 04_lstm_modeling.ipynb      # Deep Learning Modelle
+│   ├── 05_xgboost_modeling.ipynb   # Gradient Boosting
+│   └── 06_arima_analysis.ipynb     # Statistische Baseline
+│
+├── data/                         # Roh- und vorverarbeitete Datensätze
+│   └── filtered/                   # Vorverarbeitete Daten
+│
+├── outputs/                      # Ergebnisse & Exporte
+│   ├── forecasts/                  # Vorhersage-Ergebnisse
+│   ├── visualizations/             # Automatisch generierte Plots
+│   └── reports/                    # Analysen & Dokumentation
+│
+├── paths.py                     # Zentrale Pfadverwaltung
+├── utils.py                     # Core Helper Functions
+├── visualizer.py                # Plotting Engine
+├── requirements.txt             # Hauptabhängigkeiten
+├── environment.yml              # Conda Environment
+└── README.md                    # Diese Dokumentation
 
 ---
 
