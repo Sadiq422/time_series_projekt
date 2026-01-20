@@ -185,10 +185,11 @@ Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe LICENSE Datei für De
 
 ---
 
-👥 Autoren
+# **👥 Autoren**
+
 Dieses Projekt wurde gemeinsam entwickelt von:
-Claudia Tagbo
-Sadiq
+- Claudia Tagbo
+- Sadiq
 
 ---
 
