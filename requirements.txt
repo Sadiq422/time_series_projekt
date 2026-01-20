@@ -1,0 +1,106 @@
+# =============================================
+# Kernbibliotheken für Data Science und Machine Learning
+# =============================================
+
+# NumPy: Grundlegende Bibliothek für numerische Berechnungen mit Array-Operationen
+# Kompatibel mit Python 3.11
+numpy>=1.23.5
+
+# Pandas: Datenmanipulation und -analyse mit DataFrame-Strukturen
+# Kompatibel mit Python 3.11
+pandas>=2.0.0
+
+# Matplotlib: Grundlegende Plotting-Bibliothek für 2D/3D-Visualisierungen
+matplotlib>=3.7.0
+
+# Seaborn: Statistische Datenvisualisierung auf Basis von Matplotlib
+seaborn>=0.13.0
+
+# Scikit-learn: Umfangreiche Bibliothek für Machine Learning Algorithmen
+# (Tippfehler behoben und kompatible Version)
+scikit-learn>=1.3.0
+
+# Statsmodels: Statistische Modelle und Tests, insbesondere für Zeitreihenanalyse
+statsmodels>=0.14.0
+
+# XGBoost: Hochoptimierte Gradient Boosting-Bibliothek
+xgboost>=1.7.0
+
+# StatsForecast: Schnelle statistische Prognosemethoden für Zeitreihen
+statsforecast>=1.5.0
+
+# PMDARIMA: Automatische ARIMA-Modellierung (inkl. Saisonkomponenten)
+pmdarima>=2.0.4
+
+# Darts: Diverse Zeitreihenmodelle in einem vereinheitlichten Interface
+darts>=0.27.0
+
+# Prophet: Zeitreihenvorhersage mit automatischer Erkennung von Saisonmustern (von Facebook)
+prophet>=1.1.5
+
+# PyYAML: YAML-Parser und -Emitter für Konfigurationsdateien
+pyyaml>=6.0.0
+
+# Joblib: Effiziente Serialisierung von Python-Objekten (besonders für scikit-learn Modelle)
+joblib>=1.3.0
+
+# MLflow: Plattform für den gesamten Machine-Learning-Lebenszyklus (Tracking, Packaging, Deployment)
+mlflow>=2.0.0
+
+# Hyperopt: Bayesian Optimization für Hyperparameter-Tuning
+hyperopt>=0.2.7
+
+# =============================================
+# Machine Learning und Deep Learning
+# =============================================
+
+# Keras: High-Level API für neuronale Netze (läuft auf TensorFlow)
+keras>=2.13.1
+
+# TensorFlow für macOS: Spezielle Version für Apple MacOS
+# Für Apple Silicon GPU Support (M1/M2/M3 Prozessoren)
+tensorflow-macos
+
+# TensorFlow Metal: Plugin für Metal-Beschleunigung auf Apple Silicon GPUs
+tensorflow-metal
+
+# TensorFlow Hauptversion: Deep Learning Framework
+# Version 2.15.0 für Stabilität mit Apple Silicon
+tensorflow==2.15.0
+
+# =============================================
+# Jupyter Entwicklungsumgebung
+# =============================================
+
+# Jupyter Kernkomponenten
+jupyter>=1.0.0
+
+# Jupyter Notebook: Web-basierte interaktive Entwicklungsumgebung
+# Aktualisiert für Kompatibilität
+notebook>=7.0.0
+
+# IPython Kernel: Ausführungskernel für Jupyter Notebooks
+ipykernel>=6.0.0
+
+# IPython: Erweiterte interaktive Python-Shell
+ipython>=8.12.0
+
+# IPyWidgets: Interaktive Widgets für Jupyter Notebooks
+ipywidgets>=8.0.0
+
+# JupyterLab: Next-Generation Web-basierte IDE für Jupyter
+jupyterlab>=4.0.0
+
+# =============================================
+# Visualisierung
+# =============================================
+
+# Plotly: Interaktive, publikationsreife Visualisierungen
+plotly>=5.0.0
+
+# =============================================
+# Streamlit App Entwicklung
+# =============================================
+
+# Streamlit: Framework zum Erstellen von Data Science Web Apps
+streamlit>=1.32.0

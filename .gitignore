@@ -1,0 +1,81 @@
+# =================================================================
+# 🛠️ CUSTOM .GITIGNORE FÜR TIME SERIES PROJEKT
+# =================================================================
+
+# --- 📁 DATEN & DATENSÄTZE ---
+# Wir ignorieren Rohdaten und große Files, behalten aber die Struktur
+Data/
+**/train.csv
+**/test.csv
+**/sample_submission.csv
+*.parquet
+*.feather
+*.gz
+
+# --- 🧠 MODELLE & OUTPUTS (Large Files) ---
+# Ignoriere alle Modelle und Vorhersagen, außer der Ordnerstruktur
+outputs/models/*
+outputs/predictions/*
+outputs/visualizations/*
+!outputs/**/.gitkeep
+
+# Spezifische ML-Formate
+*.h5
+*.hdf5
+*.pb
+*.ckpt
+*.pt
+*.pth
+*.joblib
+*.pickle
+*.pkl
+
+# --- 🐍 PYTHON & UMGEBUNGEN ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+
+# Virtuelle Umgebungen (Explizit & Generisch)
+tf_env_310/
+retail_env_311/
+env/
+venv/
+.env
+.venv
+conda/
+.conda/
+miniconda3/
+anaconda3/
+
+# --- 📓 JUPYTER & IDE ---
+.ipynb_checkpoints/
+.jupyter/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- 🎨 STREAMLIT & LOGS ---
+.streamlit/
+logs/
+*.log
+.cache/
+
+# --- 📄 REPORTS & DOCS ---
+# Meistens wollen wir finale Berichte im Repo, 
+# aber Arbeitsversionen ignorieren
+reports/*.pdf
+reports/*.pptx
+!reports/.gitkeep
+
+# --- 🖥️ SYSTEM DATEIEN ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+temp/
+tmp/
