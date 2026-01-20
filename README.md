@@ -17,34 +17,38 @@ Enterprise-Ready Dashboard: Professionelle Dark Mode Benutzeroberfläche mit Ech
 
 # 📁 Projektstruktur & Navigation
 
-time_series_projekt/
-├── app/                          # Streamlit Dashboard & UI Logik
-│   ├── app.py                      # Hauptanwendung (Dark Mode)
-│   ├── app_backup.py               # Backup der ursprünglichen App
-│   └── bootstrap.py                # UI-Komponenten & Styling
-│
-├── notebooks/                    # Forschungs- & Entwicklungs-Pipeline
-│   ├── 01_preprocessing.ipynb      # Datenreinigung & Transformation
-│   ├── 02_feature_engineering.ipynb# Feature-Generierung
-│   ├── 03_data_management.ipynb    # I/O Prozesse
-│   ├── 04_lstm_modeling.ipynb      # Deep Learning Modelle
-│   ├── 05_xgboost_modeling.ipynb   # Gradient Boosting
-│   └── 06_arima_analysis.ipynb     # Statistische Baseline
-│
-├── data/                         # Roh- und vorverarbeitete Datensätze
-│   └── filtered/                   # Vorverarbeitete Daten
-│
-├── outputs/                      # Ergebnisse & Exporte
-│   ├── forecasts/                  # Vorhersage-Ergebnisse
-│   ├── visualizations/             # Automatisch generierte Plots
-│   └── reports/                    # Analysen & Dokumentation
-│
-├── paths.py                     # Zentrale Pfadverwaltung
-├── utils.py                     # Core Helper Functions
-├── visualizer.py                # Plotting Engine
-├── requirements.txt             # Hauptabhängigkeiten
-├── environment.yml              # Conda Environment
+Das Projekt folgt einer modularen Architektur, die Datenverarbeitung, Modellierung und UI-Layer klar trennt. Die Struktur sieht genau wie folgt aus:
+
+```text
+time_series_projekt/<br/>
+├── app/                          # Streamlit Dashboard & UI Logik<br/>
+│   ├── app.py                      # Hauptanwendung (Dark Mode)<br/>
+│   ├── app_backup.py               # Backup der ursprünglichen App<br/>
+│   └── bootstrap.py                # UI-Komponenten & Styling<br/>
+│<br/>
+├── notebooks/                    # Forschungs- & Entwicklungs-Pipeline<br/>
+│   ├── 01_preprocessing.ipynb      # Datenreinigung & Transformation<br/>
+│   ├── 02_feature_engineering.ipynb# Feature-Generierung<br/>
+│   ├── 03_data_management.ipynb    # I/O Prozesse<br/>
+│   ├── 04_lstm_modeling.ipynb      # Deep Learning Modelle<br/>
+│   ├── 05_xgboost_modeling.ipynb   # Gradient Boosting<br/>
+│   └── 06_arima_analysis.ipynb     # Statistische Baseline<br/>
+│<br/>
+├── data/                         # Roh- und vorverarbeitete Datensätze<br/>
+│   └── filtered/                   # Vorverarbeitete Daten<br/>
+│<br/>
+├── outputs/                      # Ergebnisse & Exporte<br/>
+│   ├── forecasts/                  # Vorhersage-Ergebnisse<br/>
+│   ├── visualizations/             # Automatisch generierte Plots<br/>
+│   └── reports/                    # Analysen & Dokumentation<br/>
+│<br/>
+├── paths.py                     # Zentrale Pfadverwaltung<br/>
+├── utils.py                     # Core Helper Functions<br/>
+├── visualizer.py                # Plotting Engine<br/>
+├── requirements.txt             # Hauptabhängigkeiten<br/>
+├── environment.yml              # Conda Environment<br/>
 └── README.md                    # Diese Dokumentation
+
 
 ---
 
