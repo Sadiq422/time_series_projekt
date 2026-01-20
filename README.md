@@ -1,10 +1,19 @@
 README
+---
+
 # 🚀 **Time Series Analysis & Forecasting Dashboard**
+
+---
+
 
 Eine End-to-End Machine Learning Pipeline zur Analyse und Vorhersage komplexer Zeitreihen für den Einzelhandel. Dieses Projekt kombiniert modernste Deep-Learning-Verfahren (LSTM) mit klassischen statistischen Modellen und Gradient Boosting in einem professionellen, interaktiven Dashboard.
 
+---
+
 # 📌 **Highlights**
 Enterprise-Ready Dashboard: Professionelle Dark Mode Benutzeroberfläche mit Echtzeit-Visualisierungen
+
+---
 
 Multi-Modell Ensemble: Kombiniert LSTM, XGBoost und ARIMA für robuste Vorhersagen
 
@@ -13,6 +22,8 @@ Automatisches Feature-Engineering: Lag-Features, Rolling Statistics, Saisonale D
 Produktionsreife Pipeline: Vollständige ML Pipeline von Datenvorbereitung bis Deployment
 
 Interactive Analytics: Echtzeit-Analyse mit Konfidenzintervallen und Performance-Metriken
+
+---
 
 # 📊 **Dashboard Features**
 🔗 Kernfunktionen
@@ -24,6 +35,8 @@ Residuen-Analyse: Detaillierte Fehleranalyse und Diagnostik
 
 Konfidenzintervalle: Statistische Unsicherheitsquantifizierung
 
+---
+
 # 📈 **Visualisierungen**
 Interactive Plots: Plotly-basierte interaktive Diagramme
 
@@ -32,6 +45,8 @@ Vergleichende Analysen: Tatsächliche vs. vorhergesagte Werte
 Trend-Analyse: Saisonale Dekomposition und Trenderkennung
 
 Fehlerverteilungen: Histogramme und Residuen-Plots
+
+---
 
 # ⚙️ **Konfiguration**
 Store & Item Selection: Flexible Auswahl von Geschäften und Artikeln
@@ -42,36 +57,28 @@ Export-Funktionen: CSV-Export und Report-Generierung
 
 ---
 
-# 📁 **Projektstruktur**
+# 📁 Projektstruktur & Navigation
 
-time_series_projekt/
-├── 📂 app/                          # Streamlit Dashboard & UI Logik
-│   ├── app.py                      # Hauptanwendung (Dark Mode)
-│   ├── app_backup.py               # Backup der ursprünglichen App
-│   └── bootstrap.py                # UI-Komponenten & Styling
-│
-├── 📂 notebooks/                    # Forschungs- & Entwicklungs-Pipeline
-│   ├── 01_preprocessing.ipynb      # Datenreinigung & Transformation
-│   ├── 02_feature_engineering.ipynb# Feature-Generierung
-│   ├── 03_data_management.ipynb    # I/O Prozesse
-│   ├── 04_lstm_modeling.ipynb      # Deep Learning Modelle
-│   ├── 05_xgboost_modeling.ipynb   # Gradient Boosting
-│   └── 06_arima_analysis.ipynb     # Statistische Baseline
-│
-├── 📂 data/                         # Roh- und vorverarbeitete Datensätze
-│   └── filtered/                   # Vorverarbeitete Daten
-│
-├── 📂 outputs/                      # Ergebnisse & Exporte
-│   ├── forecasts/                  # Vorhersage-Ergebnisse
-│   ├── visualizations/             # Automatisch generierte Plots
-│   └── reports/                    # Analysen & Dokumentation
-│
-├── 📜 paths.py                     # Zentrale Pfadverwaltung
-├── 📜 utils.py                     # Core Helper Functions
-├── 📜 visualizer.py                # Plotting Engine
-├── 📜 requirements.txt             # Hauptabhängigkeiten
-├── 📜 environment.yml              # Conda Environment
-└── 📜 README.md                    # Diese Dokumentation
+Das Projekt folgt einer modularen Architektur, die Datenverarbeitung, Modellierung und UI-Layer klar trennt:
+
+*   **`time_series_projekt/`**
+    *   📂 **`app/`**: Streamlit Dashboard & UI Logik
+        *   📜 `app.py`: Hauptanwendung (Dark Mode)
+        *   📜 `bootstrap.py`: UI-Komponenten & Styling
+    *   📂 **`notebooks/`**: Forschungs- & Entwicklungs-Pipeline
+        *   📓 `01_preprocessing.ipynb`: Datenreinigung & Transformation
+        *   📓 `02_feature_engineering.ipynb`: Feature-Generierung
+        *   📓 `04_lstm_modeling.ipynb`: Deep Learning Modelle
+        *   📓 `05_xgboost_modeling.ipynb`: Gradient Boosting
+        *   📓 `06_arima_analysis.ipynb`: Statistische Baseline
+    *   📂 **`data/`**: Roh- und vorverarbeitete Datensätze
+    *   📂 **`outputs/`**: Ergebnisse & Exporte
+        *   📊 `visualizations/`: Automatisch generierte Plots
+        *   📄 `reports/`: Analysen & Dokumentation
+    *   📜 `requirements.txt`: Hauptabhängigkeiten
+    *   📜 `paths.py`: Zentrale Pfadverwaltung
+    *   📜 `utils.py`: Core Helper Functions
+    *   📜 `README.md`: Diese Dokumentation
 
 ---
 
@@ -106,12 +113,16 @@ Git: Versionskontrolle
 
 Conda/Pip: Paketverwaltung
 
+---
+
 # 🚀 **Installation**
 
 ## Voraussetzungen
 Python 3.9 oder höher
 
 pip oder conda
+
+---
 
 # 📖 **Verwendung**
 
@@ -125,6 +136,8 @@ Ergebnisse analysieren: Nutzen Sie die interaktiven Visualisierungen
 
 Exportieren: Speichern Sie Vorhersagen und Berichte
 
+---
+
 # 📊 **Performance Metriken**
 
 Das System berechnet folgende Metriken automatisch:
@@ -136,6 +149,8 @@ RMSE (Root Mean Square Error)
 R² (Determinationskoeffizient)
 
 MAPE (Mean Absolute Percentage Error)
+
+---
 
 # 🔧 **Konfiguration**
 
@@ -151,7 +166,11 @@ Feature Engineering Parameter
 
 # 📄 **Lizenz**
 
+---
+
 Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe LICENSE Datei für Details.
+
+---
 
 # **📞 Kontakt**
 
