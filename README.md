@@ -149,6 +149,14 @@ Ergebnisse analysieren: Nutzen Sie die interaktiven Visualisierungen
 
 Exportieren: Speichern Sie Vorhersagen und Berichte
 
+Zuerst erstellen wir ein neues virtuelles Environment, und starten die Anwendung anschließend mit python
+- installieren alle Pakete über requirements.txt
+- Pakete installieren
+- Virtuelles Environment erstellen
+- Environment aktivieren
+- App starten
+
+
 ---
 
 # 📊 **Performance Metriken**
