@@ -40,37 +40,40 @@ Modell-Parameter: Anpassbare Forecast-Horizonte und Konfidenzniveaus
 
 Export-Funktionen: CSV-Export und Report-Generierung
 
-# 📁 **Projektstruktur**
-time_series_projekt/
-├── 📂 app/                    # Streamlit Dashboard & UI
-│   ├── 📄 app.py              # Hauptanwendung (Dark Mode)
-│   ├── 📄 app_backup.py       # Backup der ursprünglichen App
-│   └── 📄 bootstrap.py        # UI-Komponenten & Styling
-├── 📂 notebooks/              # Forschungs- & Entwicklungs-Pipeline
-│   ├── 📄 01_preprocessing.ipynb         # Datenreinigung & Transformation
-│   ├── 📄 02_feature_engineering.ipynb   # Feature-Generierung
-│   ├── 📄 03_data_management.ipynb       # I/O Prozesse
-│   ├── 📄 04_lstm_modeling.ipynb         # Deep Learning Modelle
-│   ├── 📄 05_xgboost_modeling.ipynb      # Gradient Boosting
-│   └── 📄 06_arima_analysis.ipynb        # Statistische Baseline
-├── 📂 data/                   # Datensätze
-│   └── 📂 filtered/           # Vorverarbeitete Daten
-├── 📂 models/                 # Trainierte Modelle
-│   ├── 📄 lstm_model.h5       # LSTM Modellgewichte
-│   └── 📄 scaler.pkl          # Feature-Scaler
-├── 📂 outputs/                # Ergebnisse & Exporte
-│   ├── 📂 forecasts/          # Vorhersage-Ergebnisse
-│   ├── 📂 visualizations/     # Automatisch generierte Plots
-│   └── 📂 reports/            # Analysen & Dokumentation
-├── 📄 lstm_metrics.csv        # Modell-Performance Metriken
-├── 📄 paths.py                # Zentrale Pfadverwaltung
-├── 📄 utils.py                # Core Helper Functions
-├── 📄 visualizer.py           # Plotting Engine
-├── 📄 requirements.txt        # Hauptabhängigkeiten
-├── 📄 requirements_app.txt    # Streamlit App Abhängigkeiten
-├── 📄 environment.yml         # Conda Environment
-└── 📄 README.md               # Diese Dokumentation
+---
 
+# 📁 **Projektstruktur**
+
+time_series_projekt/
+├── 📂 app/                          # Streamlit Dashboard & UI Logik
+│   ├── app.py                      # Hauptanwendung (Dark Mode)
+│   ├── app_backup.py               # Backup der ursprünglichen App
+│   └── bootstrap.py                # UI-Komponenten & Styling
+│
+├── 📂 notebooks/                    # Forschungs- & Entwicklungs-Pipeline
+│   ├── 01_preprocessing.ipynb      # Datenreinigung & Transformation
+│   ├── 02_feature_engineering.ipynb# Feature-Generierung
+│   ├── 03_data_management.ipynb    # I/O Prozesse
+│   ├── 04_lstm_modeling.ipynb      # Deep Learning Modelle
+│   ├── 05_xgboost_modeling.ipynb   # Gradient Boosting
+│   └── 06_arima_analysis.ipynb     # Statistische Baseline
+│
+├── 📂 data/                         # Roh- und vorverarbeitete Datensätze
+│   └── filtered/                   # Vorverarbeitete Daten
+│
+├── 📂 outputs/                      # Ergebnisse & Exporte
+│   ├── forecasts/                  # Vorhersage-Ergebnisse
+│   ├── visualizations/             # Automatisch generierte Plots
+│   └── reports/                    # Analysen & Dokumentation
+│
+├── 📜 paths.py                     # Zentrale Pfadverwaltung
+├── 📜 utils.py                     # Core Helper Functions
+├── 📜 visualizer.py                # Plotting Engine
+├── 📜 requirements.txt             # Hauptabhängigkeiten
+├── 📜 environment.yml              # Conda Environment
+└── 📜 README.md                    # Diese Dokumentation
+
+---
 
 # 🛠️ **Technologiestack**
 
