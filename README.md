@@ -180,6 +180,13 @@ Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe LICENSE Datei für De
 
 ---
 
+👥 Autoren
+Dieses Projekt wurde gemeinsam entwickelt von:
+Claudia Tagbo
+Sadiq
+
+---
+
 # **📞 Kontakt**
 
 Für Fragen oder Support:
