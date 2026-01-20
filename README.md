@@ -204,8 +204,8 @@ Dieses Projekt wurde gemeinsam entwickelt von:
 # **📞 Kontakt**
 
 Für Fragen oder Support:
-- Claudia
-E-mail: fotsoclaudia88@gmail.com
-- Sadiq
-qais.sadiq422@gmail.com
+- Claudia:
+- E-mail: fotsoclaudia88@gmail.com
+- Sadiq:
+- Email: qais.sadiq422@gmail.com
 
