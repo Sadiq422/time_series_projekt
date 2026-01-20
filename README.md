@@ -1,34 +1,30 @@
-🚀 Advanced Time Series Analysis & Forecasting Dashboard
-https://img.shields.io/badge/python-3.9+-blue.svg
-https://img.shields.io/badge/Streamlit-1.28.0+-red.svg
-https://img.shields.io/badge/TensorFlow-2.13.0+-orange.svg
-https://img.shields.io/badge/License-MIT-green.svg
-https://img.shields.io/badge/platform-macOS%2520%257C%2520Linux%2520%257C%2520Windows-lightgrey.svg
+README
+# 🚀 **Time Series Analysis & Forecasting Dashboard**
 
 Eine End-to-End Machine Learning Pipeline zur Analyse und Vorhersage komplexer Zeitreihen für den Einzelhandel. Dieses Projekt kombiniert modernste Deep-Learning-Verfahren (LSTM) mit klassischen statistischen Modellen und Gradient Boosting in einem professionellen, interaktiven Dashboard.
 
-🌟 Highlights
+# 📌 **Highlights**
 Enterprise-Ready Dashboard: Professionelle Dark Mode Benutzeroberfläche mit Echtzeit-Visualisierungen
 
 Multi-Modell Ensemble: Kombiniert LSTM, XGBoost und ARIMA für robuste Vorhersagen
 
-Automatische Feature-Engineering: Lag-Features, Rolling Statistics, Saisonale Dekomposition
+Automatisches Feature-Engineering: Lag-Features, Rolling Statistics, Saisonale Dekomposition
 
 Produktionsreife Pipeline: Vollständige ML Pipeline von Datenvorbereitung bis Deployment
 
 Interactive Analytics: Echtzeit-Analyse mit Konfidenzintervallen und Performance-Metriken
 
-📊 Dashboard Features
-🎯 Core Features
+# 📊 **Dashboard Features**
+🔗 Kernfunktionen
 Echtzeit Forecasting: Historische und zukünftige Verkaufsprognosen
 
 Performance Monitoring: MAE, RMSE, R² Metriken in Echtzeit
 
-Residuen-Analyse: Detailleirte Fehleranalyse und Diagnostik
+Residuen-Analyse: Detaillierte Fehleranalyse und Diagnostik
 
 Konfidenzintervalle: Statistische Unsicherheitsquantifizierung
 
-📈 Visualisierungen
+# 📈 **Visualisierungen**
 Interactive Plots: Plotly-basierte interaktive Diagramme
 
 Vergleichende Analysen: Tatsächliche vs. vorhergesagte Werte
@@ -37,66 +33,128 @@ Trend-Analyse: Saisonale Dekomposition und Trenderkennung
 
 Fehlerverteilungen: Histogramme und Residuen-Plots
 
-⚙️ Konfiguration
+# ⚙️ **Konfiguration**
 Store & Item Selection: Flexible Auswahl von Geschäften und Artikeln
 
 Modell-Parameter: Anpassbare Forecast-Horizonte und Konfidenzniveaus
 
 Export-Funktionen: CSV-Export und Report-Generierung
 
-🏗️ Projektstruktur
+# 📁 **Projektstruktur**
 time_series_projekt/
-├── 📂 app/                          # Streamlit Dashboard & UI
-│   ├── app.py                      # Hauptanwendung (Dark Mode)
-│   ├── app_backup.py               # Backup der ursprünglichen App
-│   └── bootstrap.py                # UI-Komponenten & Styling
-├── 📂 notebooks/                    # Forschungs- & Entwicklungs-Pipeline
-│   ├── 01_preprocessing.ipynb      # Datenreinigung & Transformation
-│   ├── 02_feature_engineering.ipynb# Feature-Generierung
-│   ├── 03_data_management.ipynb    # I/O Prozesse
-│   ├── 04_lstm_modeling.ipynb      # Deep Learning Modelle
-│   ├── 05_xgboost_modeling.ipynb   # Gradient Boosting
-│   └── 06_arima_analysis.ipynb     # Statistische Baseline
-├── 📂 data/                         # Datensätze
-│   └── filtered/                   # Vorverarbeitete Daten
-├── 📂 models/                       # Trainierte Modelle
-│   ├── lstm_model.h5               # LSTM Modellgewichte
-│   └── scaler.pkl                  # Feature-Scaler
-├── 📂 outputs/                      # Ergebnisse & Exporte
-│   ├── forecasts/                  # Vorhersage-Ergebnisse
-│   └── visualizations/             # Automatisch generierte Plots
-├── 📂 reports/                      # Analysen & Dokumentation
-│   └── lstm_metrics.csv            # Modell-Performance Metriken
-├── 📜 paths.py                      # Zentrale Pfadverwaltung
-├── 📜 utils.py                      # Core Helper Functions
-├── 📜 visualizer.py                 # Plotting Engine
-├── 📜 requirements.txt              # Hauptabhängigkeiten
-├── 📜 requirements_app.txt          # Streamlit App Abhängigkeiten
-├── 📜 environment.yml               # Conda Environment
-└── 📜 README.md                     # Diese Dokumentation
+├── 📂 app/                    # Streamlit Dashboard & UI
+│   ├── 📄 app.py              # Hauptanwendung (Dark Mode)
+│   ├── 📄 app_backup.py       # Backup der ursprünglichen App
+│   └── 📄 bootstrap.py        # UI-Komponenten & Styling
+├── 📂 notebooks/              # Forschungs- & Entwicklungs-Pipeline
+│   ├── 📄 01_preprocessing.ipynb         # Datenreinigung & Transformation
+│   ├── 📄 02_feature_engineering.ipynb   # Feature-Generierung
+│   ├── 📄 03_data_management.ipynb       # I/O Prozesse
+│   ├── 📄 04_lstm_modeling.ipynb         # Deep Learning Modelle
+│   ├── 📄 05_xgboost_modeling.ipynb      # Gradient Boosting
+│   └── 📄 06_arima_analysis.ipynb        # Statistische Baseline
+├── 📂 data/                   # Datensätze
+│   └── 📂 filtered/           # Vorverarbeitete Daten
+├── 📂 models/                 # Trainierte Modelle
+│   ├── 📄 lstm_model.h5       # LSTM Modellgewichte
+│   └── 📄 scaler.pkl          # Feature-Scaler
+├── 📂 outputs/                # Ergebnisse & Exporte
+│   ├── 📂 forecasts/          # Vorhersage-Ergebnisse
+│   ├── 📂 visualizations/     # Automatisch generierte Plots
+│   └── 📂 reports/            # Analysen & Dokumentation
+├── 📄 lstm_metrics.csv        # Modell-Performance Metriken
+├── 📄 paths.py                # Zentrale Pfadverwaltung
+├── 📄 utils.py                # Core Helper Functions
+├── 📄 visualizer.py           # Plotting Engine
+├── 📄 requirements.txt        # Hauptabhängigkeiten
+├── 📄 requirements_app.txt    # Streamlit App Abhängigkeiten
+├── 📄 environment.yml         # Conda Environment
+└── 📄 README.md               # Diese Dokumentation
 
 
-Dokumentation
-🛠️ Technologiestack
-Machine Learning & Data Science
+# 🛠️ **Technologiestack**
+
+## Machine Learning & Data Science:
+
 TensorFlow/Keras: LSTM Neural Networks für Sequenzvorhersagen
 
-XGBoost: Gradient Boosting für Feature-Interaktionen
+XGBoost: Gradient Boosting für tabulare Daten
 
-Scikit-learn: Preprocessing, Feature Engineering, Model Evaluation
+Statsmodels: ARIMA und statistische Analysen
 
-Statsmodels: ARIMA, Saisonale Dekomposition, Zeitreihenanalyse
+Scikit-learn: Feature Engineering und Preprocessing
 
-Data Processing & Visualization
-Pandas/Numpy: Datenmanipulation und numerische Berechnungen
+Pandas & NumPy: Datenmanipulation und -analyse
 
-Plotly/Matplotlib: Interaktive und statische Visualisierungen
+## Dashboard & Visualisierung:
 
-Darts: Zeitreihen-Bibliothek für Forecasting
+Streamlit: Interactive Web Application Framework
 
-Dashboard & UI
-Streamlit: Interactive Web Dashboard Framework
+Plotly: Interaktive Visualisierungen
 
-Custom CSS: Professionelles Dark Mode Design
+Matplotlib/Seaborn: Statische Plot-Generierung
 
-Plotly Graph Objects: Echtzeit-Updates und Interaktionen
+## Entwicklung & Deployment:
+
+
+Python 3.9+: Hauptprogrammiersprache
+
+Git: Versionskontrolle
+
+Conda/Pip: Paketverwaltung
+
+# 🚀 **Installation**
+
+## Voraussetzungen
+Python 3.9 oder höher
+
+pip oder conda
+
+# 📖 **Verwendung**
+
+Daten hochladen: Laden Sie Ihre Zeitreihendaten im CSV-Format
+
+Modell konfigurieren: Wählen Sie Vorhersagehorizont und Konfidenzniveau
+
+Training starten: Lassen Sie das Ensemble-Modell automatisch trainieren
+
+Ergebnisse analysieren: Nutzen Sie die interaktiven Visualisierungen
+
+Exportieren: Speichern Sie Vorhersagen und Berichte
+
+# 📊 **Performance Metriken**
+
+Das System berechnet folgende Metriken automatisch:
+
+MAE (Mean Absolute Error)
+
+RMSE (Root Mean Square Error)
+
+R² (Determinationskoeffizient)
+
+MAPE (Mean Absolute Percentage Error)
+
+# 🔧 **Konfiguration**
+
+Anpassbare Parameter in config.py:
+
+Forecast Horizon (1-52 Wochen)
+
+Konfidenzintervalle (80%, 90%, 95%)
+
+Modellgewichtungen (LSTM, XGBoost, ARIMA)
+
+Feature Engineering Parameter
+
+# 📄 **Lizenz**
+
+Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe LICENSE Datei für Details.
+
+# **📞 Kontakt**
+
+Für Fragen oder Support:
+Claudia
+E-mail: fotsoclaudia88@gmail.com
+Sadiq
+qais.sadiq422@gmail.com
+
