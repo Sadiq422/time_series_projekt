@@ -15,6 +15,40 @@ Enterprise-Ready Dashboard: Professionelle Dark Mode Benutzeroberfläche mit Ech
 
 ---
 
+# 📁 Projektstruktur & Navigation
+
+time_series_projekt/
+├── app/                          # Streamlit Dashboard & UI Logik
+│   ├── app.py                      # Hauptanwendung (Dark Mode)
+│   ├── app_backup.py               # Backup der ursprünglichen App
+│   └── bootstrap.py                # UI-Komponenten & Styling
+│
+├── notebooks/                    # Forschungs- & Entwicklungs-Pipeline
+│   ├── 01_preprocessing.ipynb      # Datenreinigung & Transformation
+│   ├── 02_feature_engineering.ipynb# Feature-Generierung
+│   ├── 03_data_management.ipynb    # I/O Prozesse
+│   ├── 04_lstm_modeling.ipynb      # Deep Learning Modelle
+│   ├── 05_xgboost_modeling.ipynb   # Gradient Boosting
+│   └── 06_arima_analysis.ipynb     # Statistische Baseline
+│
+├── data/                         # Roh- und vorverarbeitete Datensätze
+│   └── filtered/                   # Vorverarbeitete Daten
+│
+├── outputs/                      # Ergebnisse & Exporte
+│   ├── forecasts/                  # Vorhersage-Ergebnisse
+│   ├── visualizations/             # Automatisch generierte Plots
+│   └── reports/                    # Analysen & Dokumentation
+│
+├── paths.py                     # Zentrale Pfadverwaltung
+├── utils.py                     # Core Helper Functions
+├── visualizer.py                # Plotting Engine
+├── requirements.txt             # Hauptabhängigkeiten
+├── environment.yml              # Conda Environment
+└── README.md                    # Diese Dokumentation
+
+
+---
+
 Multi-Modell Ensemble: Kombiniert LSTM, XGBoost und ARIMA für robuste Vorhersagen
 
 Automatisches Feature-Engineering: Lag-Features, Rolling Statistics, Saisonale Dekomposition
@@ -54,31 +88,6 @@ Store & Item Selection: Flexible Auswahl von Geschäften und Artikeln
 Modell-Parameter: Anpassbare Forecast-Horizonte und Konfidenzniveaus
 
 Export-Funktionen: CSV-Export und Report-Generierung
-
----
-
-# 📁 Projektstruktur & Navigation
-
-Das Projekt folgt einer modularen Architektur, die Datenverarbeitung, Modellierung und UI-Layer klar trennt:
-
-*   **`time_series_projekt/`**
-    *   📂 **`app/`**: Streamlit Dashboard & UI Logik
-        *   📜 `app.py`: Hauptanwendung (Dark Mode)
-        *   📜 `bootstrap.py`: UI-Komponenten & Styling
-    *   📂 **`notebooks/`**: Forschungs- & Entwicklungs-Pipeline
-        *   📓 `01_preprocessing.ipynb`: Datenreinigung & Transformation
-        *   📓 `02_feature_engineering.ipynb`: Feature-Generierung
-        *   📓 `04_lstm_modeling.ipynb`: Deep Learning Modelle
-        *   📓 `05_xgboost_modeling.ipynb`: Gradient Boosting
-        *   📓 `06_arima_analysis.ipynb`: Statistische Baseline
-    *   📂 **`data/`**: Roh- und vorverarbeitete Datensätze
-    *   📂 **`outputs/`**: Ergebnisse & Exporte
-        *   📊 `visualizations/`: Automatisch generierte Plots
-        *   📄 `reports/`: Analysen & Dokumentation
-    *   📜 `requirements.txt`: Hauptabhängigkeiten
-    *   📜 `paths.py`: Zentrale Pfadverwaltung
-    *   📜 `utils.py`: Core Helper Functions
-    *   📜 `README.md`: Diese Dokumentation
 
 ---
 
