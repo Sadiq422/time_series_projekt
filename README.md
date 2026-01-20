@@ -13,19 +13,27 @@ Eine End-to-End Machine Learning Pipeline zur Analyse und Vorhersage komplexer Z
 # 📌 **Highlights**
 Enterprise-Ready Dashboard: Professionelle Dark Mode Benutzeroberfläche mit Echtzeit-Visualisierungen
 
+Multi-Modell Ensemble: Kombiniert LSTM, XGBoost und ARIMA für robuste Vorhersagen
+
+Automatisches Feature-Engineering: Lag-Features, Rolling Statistics, Saisonale Dekomposition
+
+Produktionsreife Pipeline: Vollständige ML Pipeline von Datenvorbereitung bis Deployment
+
+Interactive Analytics: Echtzeit-Analyse mit Konfidenzintervallen und Performance-Metriken
+
 ---
 
 # 📁 Projektstruktur & Navigation
 
 Das Projekt folgt einer modularen Architektur, die Datenverarbeitung, Modellierung und UI-Layer klar trennt. Die Struktur sieht genau wie folgt aus:
 
-```text
+
 time_series_projekt/<br/>
 ├── app/                          # Streamlit Dashboard & UI Logik<br/>
 │   ├── app.py                      # Hauptanwendung (Dark Mode)<br/>
 │   ├── app_backup.py               # Backup der ursprünglichen App<br/>
 │   └── bootstrap.py                # UI-Komponenten & Styling<br/>
-│<br/>
+│
 ├── notebooks/                    # Forschungs- & Entwicklungs-Pipeline<br/>
 │   ├── 01_preprocessing.ipynb      # Datenreinigung & Transformation<br/>
 │   ├── 02_feature_engineering.ipynb# Feature-Generierung<br/>
@@ -33,15 +41,15 @@ time_series_projekt/<br/>
 │   ├── 04_lstm_modeling.ipynb      # Deep Learning Modelle<br/>
 │   ├── 05_xgboost_modeling.ipynb   # Gradient Boosting<br/>
 │   └── 06_arima_analysis.ipynb     # Statistische Baseline<br/>
-│<br/>
+
 ├── data/                         # Roh- und vorverarbeitete Datensätze<br/>
 │   └── filtered/                   # Vorverarbeitete Daten<br/>
-│<br/>
+│
 ├── outputs/                      # Ergebnisse & Exporte<br/>
 │   ├── forecasts/                  # Vorhersage-Ergebnisse<br/>
 │   ├── visualizations/             # Automatisch generierte Plots<br/>
 │   └── reports/                    # Analysen & Dokumentation<br/>
-│<br/>
+│
 ├── paths.py                     # Zentrale Pfadverwaltung<br/>
 ├── utils.py                     # Core Helper Functions<br/>
 ├── visualizer.py                # Plotting Engine<br/>
@@ -52,15 +60,6 @@ time_series_projekt/<br/>
 
 ---
 
-Multi-Modell Ensemble: Kombiniert LSTM, XGBoost und ARIMA für robuste Vorhersagen
-
-Automatisches Feature-Engineering: Lag-Features, Rolling Statistics, Saisonale Dekomposition
-
-Produktionsreife Pipeline: Vollständige ML Pipeline von Datenvorbereitung bis Deployment
-
-Interactive Analytics: Echtzeit-Analyse mit Konfidenzintervallen und Performance-Metriken
-
----
 
 # 📊 **Dashboard Features**
 🔗 Kernfunktionen
